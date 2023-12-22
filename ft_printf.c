@@ -6,7 +6,7 @@
 /*   By: hdrahm <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 22:27:40 by hdrahm            #+#    #+#             */
-/*   Updated: 2023/12/21 18:21:46 by hdrahm           ###   ########.fr       */
+/*   Updated: 2023/12/22 16:42:18 by hdrahm           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -128,5 +128,6 @@ int	ft_printf(const char *format, ...)
 			count += ft_putchar(*format);
 		format++;
 	}
+	va_end(ap);
 	return (count);
 }
